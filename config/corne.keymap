@@ -12,60 +12,30 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            display-name = "Base";
+        layer_0 {
             bindings = <
-&kp LEFT_ALT  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y          &kp U      &kp I          &kp O    &kp P     &kp LEFT_CONTROL
-&kp TAB       &kp A  &kp S  &kp D  &kp F  &kp G        &kp H          &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N          &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
-                            &mo 2  &mo 1  &kp ENTER    &kp LEFT_META  &kp SPACE  &kp BACKSPACE
+&kp TAB     &kp Q  &kp W               &kp E             &kp R               &kp T        &kp Y      &kp U      &kp I          &kp O    &kp P     &kp DELETE
+&kp ESCAPE  &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D    &mt LEFT_COMMAND F  &kp G        &kp H      &kp J      &kp K          &kp L    &kp SEMI  &kp CAPS
+&mo 1       &kp Z  &kp X               &kp C             &kp V               &kp B        &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mo 2
+                                       &kp LEFT_COMMAND  &kp LEFT_SHIFT      &kp SPACE    &kp SPACE  &kp ENTER  &kp BACKSPACE
             >;
         };
 
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Lower";
+        layer_1 {
             bindings = <
-&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &kp F1        &kp F2        &kp F3        &trans        &tog 3          &trans    &trans    &trans  &trans     &trans  &trans
+&kp F1      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
+&trans      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
                                         &trans        &trans        &trans          &trans    &trans    &trans
             >;
         };
 
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Raise";
+        layer_2 {
             bindings = <
-&trans  &kp EXCL       &kp AT         &kp HASH         &kp DLLR          &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &kp KP_PLUS    &kp KP_MINUS   &kp KP_MULTIPLY  &kp KP_DIVIDE     &kp KP_EQUAL    &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&trans  &kp BACKSLASH  &kp LESS_THAN  &kp PIPE         &kp GREATER_THAN  &kp KP_EQUAL    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE
-                                      &trans           &trans            &trans          &trans     &trans     &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&kp LALT   &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &kp LEFT_META
-&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &mo 1  &mo 2  &kp LCTRL    &kp SPACE  &kp BSPC  &kp ENTER
+&kp GRAVE  &trans                &trans                &trans      &trans            &trans           &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT    &kp RBKT      &kp LS(LBRC)  &kp LS(RBRC)
+&trans     &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_FORWARD    &kp LS(PLUS)  &kp LS(PLUS)  &kp MINUS   &kp LS(STAR)  &kp FSLH      &kp LS(RBRC)
+&trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans      &trans            &trans           &kp LS(LT)    &kp LS(PIPE)  &kp LS(GT)  &kp BSLH      &kp TILDE     &trans
+                                                       &trans      &trans            &trans           &trans        &trans        &trans
             >;
         };
     };
