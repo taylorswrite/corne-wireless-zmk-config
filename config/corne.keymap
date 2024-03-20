@@ -14,28 +14,28 @@
 
         layer_4 {
             bindings = <
-&kp LCTRL  &kp Q  &kp W  &kp E      &kp R   &kp T       &kp Y    &kp U      &kp I      &kp O    &kp P     &kp DELETE
-&kp LALT   &kp A  &kp S  &kp D      &kp F   &kp G       &kp H    &kp J      &kp K      &kp L    &kp SEMI  &lt 2 SQT
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V   &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp ENTER  &kp N1  &kp LGUI    &kp TAB  &kp SPACE  &kp BSPC
+&kp LCTRL  &kp Q  &kp W  &kp E      &kp R      &kp T       &kp Y    &kp U      &kp I      &kp O    &kp P     &kp DELETE
+&mo 1      &kp A  &kp S  &kp D      &kp F      &kp G       &kp H    &kp J      &kp K      &kp L    &kp SEMI  &lt 2 SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp ENTER  &kp SPACE  &sk LGUI    &kp TAB  &kp SPACE  &kp BSPC
             >;
         };
 
         Numbers-FN {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&kp TILDE  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &kp CAPSLOCK
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &kp CAPSLOCK
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Movement {
             bindings = <
-&trans  &trans         &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LESS_THAN    &kp HOME                  &kp PAGE_DOWN              &kp PAGE_UP  &kp END    &trans  &trans
-&trans  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT           &kp LEFT                  &kp DOWN                   &kp UP       &kp RIGHT  &trans  &trans
-&trans  &kp PIPE       &kp ASTERISK     &kp SLASH          &kp MINUS              &kp PLUS         &kp LA(LG(I))             &kp LS(LG(M))              &trans       &trans     &trans  &trans
-                                        &kp UNDER          &kp MINUS              &kp EQUAL        &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
+&kp GRAVE  &trans         &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LESS_THAN    &kp HOME                  &kp PAGE_DOWN              &kp PAGE_UP  &kp END    &trans  &trans
+&kp TILDE  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT           &kp LEFT                  &kp DOWN                   &kp UP       &kp RIGHT  &trans  &trans
+&sl 3      &kp PIPE       &kp ASTERISK     &kp SLASH          &kp MINUS              &kp PLUS         &kp LA(LG(I))             &kp LS(LG(M))              &trans       &trans     &trans  &trans
+                                           &kp UNDER          &kp MINUS              &kp EQUAL        &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
             >;
         };
 
