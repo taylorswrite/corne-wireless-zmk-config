@@ -34,7 +34,7 @@
             bindings = <
 &trans  &trans         &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LESS_THAN    &kp HOME                  &kp PAGE_DOWN              &kp PAGE_UP  &kp END    &trans  &trans
 &trans  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT           &kp LEFT                  &kp DOWN                   &kp UP       &kp RIGHT  &trans  &trans
-&trans  &kp PIPE       &kp ASTERISK     &kp SLASH          &kp MINUS              &kp PLUS         &trans                    &trans                     &trans       &trans     &trans  &trans
+&trans  &kp PIPE       &kp ASTERISK     &kp SLASH          &kp MINUS              &kp PLUS         &kp LA(LG(I))             &kp LS(LG(M))              &trans       &trans     &trans  &trans
                                         &kp UNDER          &kp MINUS              &kp EQUAL        &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
             >;
         };
