@@ -17,8 +17,8 @@
         Base {
             bindings = <
 &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp F     &kp P        &kp G          &kp J                  &kp L      &kp U          &kp Y    &kp SEMI  &kp DELETE
-&kp ENTER                                 &kp A  &kp R  &kp S     &kp T        &kp D          &kp H                  &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp V        &kp B          &kp K                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
+&kp ENTER                                 &kp A  &kp S  &kp R     &kp T        &kp B          &kp M                  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp D        &kp V          &kp K                  &kp H      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
                                                         &sk LGUI  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_CONTROL EXCL  &kp SPACE  &kp BACKSPACE
             >;
         };
@@ -34,10 +34,10 @@
 
         Nav {
             bindings = <
-&trans  &trans        &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &sk LGUI      &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&trans  &sk LS(LGUI)  &kp HOME              &kp Z     &kp END                &trans           &trans        &trans        &trans        &trans        &trans        &trans
-                                            &trans    &trans                 &trans           &trans        &trans        &trans
+&kp LG(TAB)  &trans        &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans      &trans        &trans        &trans        &trans  &trans
+&trans       &sk LGUI      &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans      &kp R         &kp V         &kp O         &kp X   &trans
+&trans       &sk LS(LGUI)  &kp HOME              &kp Z     &kp END                &trans           &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+                                                 &trans    &trans                 &trans           &trans      &trans        &trans
             >;
         };
     };
