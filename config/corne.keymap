@@ -14,11 +14,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        custom {
             bindings = <
-&mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp E     &kp R        &kp T          &kp Y                  &kp U      &kp I          &kp O    &kp P     &kp DELETE
-&kp ENTER                                 &kp A  &kp S  &kp D     &kp F        &kp G          &kp H                  &kp J      &kp K          &kp L    &kp SEMI  &kp APOS
-&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp V        &kp B          &kp N                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
+&mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp F     &kp R        &kp P          &kp J                  &kp L      &kp U          &kp Y    &kp SEMI  &kp DELETE
+&kp ENTER                                 &kp A  &kp S  &kp D     &kp T        &kp G          &kp H                  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp V        &kp B          &kp K                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
                                                         &sk LGUI  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_CONTROL EXCL  &kp SPACE  &kp BACKSPACE
             >;
         };
@@ -27,7 +27,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3         &kp N4    &kp N5      &kp F1        &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
 &trans  &kp N6     &kp N7     &kp N8         &kp N9    &kp N0      &kp F7        &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &sk GLOBE  &kp GRAVE  &kp BACKSLASH  &kp LBKT  &kp RBKT    &kp CAPSLOCK  &to 0   &to 3   &trans   &trans   &trans
+&trans  &sk GLOBE  &kp GRAVE  &kp BACKSLASH  &kp LBKT  &kp RBKT    &kp CAPSLOCK  &trans  &trans  &trans   &trans   &trans
                               &trans         &trans    &trans      &trans        &trans  &trans
             >;
         };
@@ -38,15 +38,6 @@
 &trans       &sk LGUI      &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans      &kp R         &kp V         &kp O         &kp X   &trans
 &trans       &sk LS(LGUI)  &kp HOME              &kp Z     &kp END                &trans           &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
                                                  &trans    &trans                 &trans           &trans      &trans        &trans
-            >;
-        };
-
-        custom {
-            bindings = <
-&mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp F     &kp R        &kp P          &kp J                  &kp L      &kp U          &kp Y    &kp SEMI  &kp DELETE
-&kp ENTER                                 &kp A  &kp S  &kp D     &kp T        &kp G          &kp H                  &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp V        &kp B          &kp K                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
-                                                        &sk LGUI  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_CONTROL EXCL  &kp SPACE  &kp BACKSPACE
             >;
         };
     };
