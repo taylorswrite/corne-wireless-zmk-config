@@ -57,10 +57,10 @@
 
         Nav {
             bindings = <
-&kp LG(TAB)  &trans        &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans          &bill4time    &A104         &p4           &trans  &trans
-&trans       &kp LGUI      &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans          &kp R         &kp V         &kp N         &kp O   &trans
-&trans       &kp LS(LGUI)  &kp HOME              &kp Z     &kp END                &trans           &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-                                                 &trans    &trans                 &trans           &trans          &trans        &trans
+&kp LG(TAB)  &kp LG(GRAVE)  &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans      &bill4time    &A104         &p4           &trans  &kp LS(LG(NUMBER_5))
+&trans       &kp LGUI       &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans      &kp R         &kp V         &kp N         &kp O   &kp LS(LG(NUMBER_4))
+&trans       &kp LS(LGUI)   &A104                 &kp Z     &A104                  &trans           &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+                                                  &trans    &trans                 &trans           &trans      &trans        &trans
             >;
         };
     };
