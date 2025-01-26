@@ -48,19 +48,19 @@
 
         num_n_fxn {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3         &kp N4    &kp N5      &kp F1        &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &kp N6     &kp N7     &kp N8         &kp N9    &kp N0      &kp F7        &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &sk GLOBE  &kp GRAVE  &kp BACKSLASH  &kp LBKT  &kp RBKT    &kp CAPSLOCK  &trans  &trans  &trans   &trans   &trans
-                              &trans         &trans    &trans      &trans        &trans  &trans
+&trans  &kp N1     &kp N2     &kp N3         &kp N4    &kp N5      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      &kp F6
+&trans  &kp N6     &kp N7     &kp N8         &kp N9    &kp N0      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11     &kp F12
+&trans  &sk GLOBE  &kp GRAVE  &kp BACKSLASH  &kp LBKT  &kp RBKT    &kp CAPSLOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans
+                              &trans         &trans    &trans      &trans        &trans        &trans
             >;
         };
 
         Nav {
             bindings = <
-&kp LG(TAB)  &kp LG(GRAVE)  &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &bt BT_SEL 2  &bill4time  &A104   &p4     &bt BT_CLR  &kp LS(LG(NUMBER_5))
-&trans       &kp LGUI       &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &bt BT_SEL 1  &kp R       &kp V   &kp N   &kp O       &kp LS(LG(NUMBER_4))
-&trans       &kp LS(LGUI)   &A104                 &kp Z     &A104                  &trans           &bt BT_SEL 0  &trans      &trans  &trans  &trans      &trans
-                                                  &trans    &trans                 &trans           &trans        &trans      &trans
+&kp LG(TAB)  &kp LG(GRAVE)  &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans  &bill4time  &A104   &p4     &bt BT_CLR  &kp LS(LG(NUMBER_5))
+&trans       &kp LGUI       &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans  &kp R       &kp V   &kp N   &kp O       &kp LS(LG(NUMBER_4))
+&trans       &kp LS(LGUI)   &A104                 &kp Z     &A104                  &trans           &trans  &trans      &trans  &trans  &trans      &trans
+                                                  &trans    &trans                 &trans           &trans  &trans      &trans
             >;
         };
     };
