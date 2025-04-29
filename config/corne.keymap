@@ -12,9 +12,19 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle-gaming {
-            bindings = <&tog 3>;
+        gaming {
+            bindings = <&to 3>;
             key-positions = <10 9 8 7>;
+        };
+
+        linux {
+            bindings = <&to 4>;
+            key-positions = <19 20 21 22>;
+        };
+
+        macos {
+            bindings = <&to 0>;
+            key-positions = <31 32 33 34>;
         };
     };
 
@@ -22,7 +32,7 @@
         bill4time: bill4time {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp O &kp N &kp F &kp I &kp R &kp M &kp E &kp D &kp SPACE &kp A &kp N &kp D &kp SPACE &kp V &kp E &kp R &kp I &kp F &kp I &kp E &kp D>;
+            bindings = <&kp LS(C) &kp O &kp N &kp F &kp I &kp R &kp M &kp E &kp D &kp SPACE &kp A &kp N &kp D &kp SPACE &kp V &kp E &kp R &kp I &kp F &kp I &kp E &kp D>;
             label = "bill4time";
         };
 
@@ -36,20 +46,27 @@
         A104: A104 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(A) &kp N1 &kp N0 &kp N4>;
+            bindings = <&kp LS(A) &kp N1 &kp N0 &kp N4>;
             label = "A104";
+        };
+
+        review: review {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp V>;
+            label = "REVIEW";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        custom {
+        Politicom {
             bindings = <
-&mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp E     &kp R        &kp T          &kp Y                  &kp U      &kp I          &kp O    &kp P     &kp DELETE
-&kp ENTER                                 &kp A  &kp S  &kp D     &kp F        &kp G          &kp H                  &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT                                 &kp Z  &kp X  &kp C     &kp V        &kp B          &kp N                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
-                                                        &kp LGUI  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_CONTROL EXCL  &kp SPACE  &kp BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T          &kp Y                  &kp U      &kp I          &kp O    &kp P     &kp DELETE
+&kp ENTER  &kp A  &kp S  &kp D     &kp F        &kp G          &kp H                  &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B          &kp N                  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
+                         &kp LGUI  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_CONTROL EXCL  &kp SPACE  &kp BACKSPACE
             >;
         };
 
@@ -64,19 +81,28 @@
 
         Nav {
             bindings = <
-&kp LG(TAB)  &kp LG(GRAVE)  &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans  &bill4time  &A104   &p4     &bt BT_CLR  &kp LS(LG(NUMBER_5))
-&trans       &kp LGUI       &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans  &kp R       &kp V   &kp N   &kp O       &kp LS(LG(NUMBER_4))
-&trans       &kp LS(LGUI)   &A104                 &kp Z     &A104                  &trans           &trans  &trans      &trans  &trans  &trans      &trans
+&kp LG(TAB)  &kp LG(GRAVE)  &kp LG(LEFT_BRACKET)  &kp UP    &kp LG(RIGHT_BRACKET)  &kp PAGE_UP      &trans  &bill4time  &A104   &p4     &review  &kp LS(LG(NUMBER_5))
+&trans       &kp LGUI       &kp LEFT              &kp DOWN  &kp RIGHT              &kp PAGE_DOWN    &trans  &kp R       &kp V   &kp N   &kp O    &kp LS(LG(NUMBER_4))
+&trans       &kp LS(LGUI)   &A104                 &kp Z     &A104                  &trans           &trans  &trans      &trans  &trans  &trans   &trans
                                                   &trans    &trans                 &trans           &trans  &trans      &trans
             >;
         };
 
-        windows_gaming {
+        Gaming {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E             &kp R      &kp T          &kp Y              &kp U        &kp I          &kp O    &kp P     &kp ESCAPE
 &kp ENTER  &kp A  &kp S  &kp D             &kp F      &kp G          &kp H              &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V      &kp B          &kp N              &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp LEFT_ALT
                          &kp LEFT_CONTROL  &kp SPACE  &lt 1 EQUAL    &mt LEFT_GUI EXCL  &lt 2 MINUS  &kp BACKSPACE
+            >;
+        };
+
+        Linux {
+            bindings = <
+&mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT TAB  &kp Q  &kp W  &kp E             &kp R        &kp T          &kp Y              &kp U      &kp I          &kp O    &kp P     &kp DELETE
+&kp ENTER                                 &kp A  &kp S  &kp D             &kp F        &kp G          &kp H              &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT                                 &kp Z  &kp X  &kp C             &kp V        &kp B          &kp N              &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt LEFT_ALT ESCAPE
+                                                        &kp LEFT_CONTROL  &lt 2 MINUS  &lt 1 EQUAL    &mt LEFT_GUI EXCL  &kp SPACE  &kp BACKSPACE
             >;
         };
     };
