@@ -41,10 +41,10 @@
 
         BASE {
             bindings = <
-&kp TAB    &kp Q                &kp W                  &kp E            &kp R                    &kp T          &kp Y       &kp U                    &kp I            &kp O                  &kp P                        &kp DELETE
-&kp ENTER  &homemod LEFT_ALT A  &homemod LEFT_SHIFT S  &homemod LGUI D  &homemod LEFT_CONTROL F  &lt 2 G        &lt 3 H     &homemod LEFT_CONTROL J  &homemod LGUI K  &homemod LEFT_SHIFT L  &homemod LEFT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &mt LEFT_SHIFT Z     &kp X                  &kp C            &kp V                    &kp B          &kp N       &kp M                    &kp COMMA        &kp DOT                &mt RIGHT_SHIFT FSLH         &kp ESCAPE
-                                                       &kp ESCAPE       &lt 4 MINUS              &lt 3 EQUAL    &kp ESCAPE  &kp SPACE                &kp BACKSPACE
+&kp TAB     &kp Q                &kp W                  &kp E            &kp R                    &kp T          &kp Y      &kp U                    &kp I            &kp O                  &kp P                        &kp DELETE
+&kp ESCAPE  &homemod LEFT_ALT A  &homemod LEFT_SHIFT S  &homemod LGUI D  &homemod LEFT_CONTROL F  &lt 2 G        &lt 3 H    &homemod LEFT_CONTROL J  &homemod LGUI K  &homemod LEFT_SHIFT L  &homemod LEFT_ALT SEMICOLON  &kp SQT
+&kp LSHFT   &mt LEFT_SHIFT Z     &kp X                  &kp C            &kp V                    &kp B          &kp N      &kp M                    &kp COMMA        &kp DOT                &mt RIGHT_SHIFT FSLH         &kp ESCAPE
+                                                        &kp ENTER        &lt 4 MINUS              &lt 3 EQUAL    &kp ENTER  &kp SPACE                &kp BACKSPACE
             >;
         };
 
