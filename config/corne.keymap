@@ -31,8 +31,8 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <160>;
-            quick-tap-ms = <160>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
         };
     };
 
@@ -41,10 +41,10 @@
 
         BASE {
             bindings = <
-&kp TAB    &kp Q                &kp W                  &kp E            &kp R                    &kp T          &kp Y        &kp U                    &kp I            &kp O                  &kp P                        &kp DELETE
-&kp ENTER  &homemod LEFT_ALT A  &homemod LEFT_SHIFT S  &homemod LGUI D  &homemod LEFT_CONTROL F  &lt 2 G        &lt 3 H      &homemod LEFT_CONTROL J  &homemod LGUI K  &homemod LEFT_SHIFT L  &homemod LEFT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &mt LEFT_SHIFT Z     &kp X                  &kp C            &kp V                    &kp B          &kp N        &kp M                    &kp COMMA        &kp DOT                &mt RIGHT_SHIFT FSLH         &kp ESCAPE
-                                                       &kp ENTER        &lt 4 MINUS              &lt 3 EQUAL    &lt 4 ENTER  &kp SPACE                &kp BACKSPACE
+&kp TAB     &kp Q                &kp W                  &kp E            &kp R                    &kp T          &kp Y        &kp U                    &kp I            &kp O                  &kp P                        &kp DELETE
+&kp ESCAPE  &homemod LEFT_ALT A  &homemod LEFT_SHIFT S  &homemod LGUI D  &homemod LEFT_CONTROL F  &lt 2 G        &lt 3 H      &homemod LEFT_CONTROL J  &homemod LGUI K  &homemod LEFT_SHIFT L  &homemod LEFT_ALT SEMICOLON  &kp SQT
+&kp LSHFT   &mt LEFT_SHIFT Z     &kp X                  &kp C            &kp V                    &kp B          &kp N        &kp M                    &kp COMMA        &kp DOT                &mt RIGHT_SHIFT FSLH         &kp ESCAPE
+                                                        &kp ENTER        &lt 4 MINUS              &lt 3 EQUAL    &lt 4 ENTER  &kp SPACE                &kp BACKSPACE
             >;
         };
 
